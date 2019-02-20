@@ -38,11 +38,9 @@ public class FlightServiceTest {
 		Integer actualFlightId = flight.get().getFlightId();
 		assertEquals(new Integer(1), actualFlightId); 
 	}
-
-	@Test
-	public void testSingleFlightIfNotAvailable() {
-		Optional<Flight> flight = service.getFlightById(5);
-		assertEquals(false, flight.isPresent());
-	}
+	/*
+	 * @Test public void testSingleFlightIfNotAvailable() { Optional<Flight> flight
+	 * = service.getFlightById(5); assertEquals(false, flight.isPresent()); }
+	 */
 	
 }
